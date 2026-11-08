@@ -26,7 +26,7 @@ This is a **3-class classification problem**. Five classical classifiers (Logist
 | Class balance | Graduate 2,209 (49.9%) · Dropout 1,421 (32.1%) · Enrolled 794 (17.9%) |
 | Missing values | None |
 
-The data comes from a higher-education institution in Portugal and covers undergraduate degrees such as agronomy, design, education, nursing, journalism, management, social service and technologies. The features fall into four groups:
+The data comes from a higher-education institution in Portugal and covers undergraduate degrees such as agronomy, design, education, nursing, journalism, management, social service and technologies. The features fall into five groups:
 
 - **Demographic:** marital status, nationality, gender, age at enrolment, displaced, international.
 - **Socio-economic:** mother's/father's qualification and occupation, scholarship holder, debtor, tuition fees up to date, educational special needs.
@@ -42,22 +42,22 @@ https://github.com/Chaitanyarai899/ml-assignment2-student-dropout
 
 ```
 ml-assignment2-student-dropout/
-├── app.py                     # Streamlit app (inference only, no retraining)
-├── train_models.py            # trains the 5 models and writes metrics + artifacts
-├── requirements.txt
-├── README.md
-├── test_data.csv              # held-out 20% split (885 rows, 36 features + Target)
-├── data/
-│   └── student_dropout_full.csv   # original UCI file
-└── model/
-    ├── logistic_regression.joblib
-    ├── decision_tree.joblib
-    ├── knn.joblib
-    ├── naive_bayes.joblib
-    ├── support_vector_machine.joblib
-    ├── label_encoder.joblib       # preprocessing artifact (target encoding)
-    ├── feature_columns.json       # preprocessing artifact (expected column order)
-    └── metrics.json               # metrics reported below
+|-- app.py                     # Streamlit app (inference only, no retraining)
+|-- train_models.py            # trains the 5 models and writes metrics + artifacts
+|-- requirements.txt
+|-- README.md
+|-- test_data.csv              # held-out 20% split (885 rows, 36 features + Target)
+|-- data/
+|   `-- student_dropout_full.csv   # original UCI file
+`-- model/
+    |-- logistic_regression.joblib
+    |-- decision_tree.joblib
+    |-- knn.joblib
+    |-- naive_bayes.joblib
+    |-- support_vector_machine.joblib
+    |-- label_encoder.joblib       # preprocessing artifact (target encoding)
+    |-- feature_columns.json       # preprocessing artifact (expected column order)
+    `-- metrics.json               # metrics reported below
 ```
 
 **Reproduce:** `pip install -r requirements.txt && python train_models.py && streamlit run app.py`
