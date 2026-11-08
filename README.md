@@ -4,7 +4,7 @@
 **Name:** Chaitanya Rai  **BITS ID:** 2026ak05673
 
 - **GitHub repository:** https://github.com/Chaitanyarai899/ml-assignment2-student-dropout
-- **Live Streamlit app:** STREAMLIT_APP_URL
+- **Live Streamlit app:** https://ml-assignment2-student-dropout-chaitanyarai.streamlit.app
 
 ---
 
